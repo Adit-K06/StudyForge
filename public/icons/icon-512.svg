@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="forestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d7658"/>
+      <stop offset="100%" stop-color="#091712"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5eb08b"/>
+      <stop offset="100%" stop-color="#3d946f"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#forestGrad)"/>
+  <!-- Anvil / Forge base with organic forest leaves sprouting -->
+  <path d="M128 352h256c8 0 16-8 16-16v-24c0-12-8-20-20-24l-48-16c-12-4-20-16-20-28V208c0-8-8-16-16-16H216c-8 0-16 8-16 16v36c0 12-8 24-20 28l-48 16c-12 4-20 12-20 24v24c0 8 8 16 16 16z" fill="#bae1ce" opacity="0.9"/>
+  <!-- Central sprout / anvil forge spark -->
+  <path d="M256 128c-40 48-64 80-64 128 0 35 29 64 64 64s64-29 64-64c0-48-24-80-64-128z" fill="url(#leafGrad)"/>
+  <circle cx="256" cy="240" r="14" fill="#ffffff" opacity="0.9"/>
+</svg>

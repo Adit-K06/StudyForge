@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <linearGradient id="forestGrad192" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d7658"/>
+      <stop offset="100%" stop-color="#091712"/>
+    </linearGradient>
+    <linearGradient id="leafGrad192" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5eb08b"/>
+      <stop offset="100%" stop-color="#3d946f"/>
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="48" fill="url(#forestGrad192)"/>
+  <path d="M48 132h96c3 0 6-3 6-6v-9c0-5-3-8-8-9l-18-6c-5-2-8-6-8-11V78c0-3-3-6-6-6H82c-3 0-6 3-6 6v13c0 5-3 9-8 11l-18 6c-5 1-8 4-8 9v9c0 3 3 6 6 6z" fill="#bae1ce" opacity="0.9"/>
+  <path d="M96 48c-15 18-24 30-24 48 0 13 11 24 24 24s24-11 24-24c0-18-9-30-24-48z" fill="url(#leafGrad192)"/>
+  <circle cx="96" cy="90" r="5" fill="#ffffff" opacity="0.9"/>
+</svg>

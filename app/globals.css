@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #f6f9f7;
+  --bg-secondary: #eef4f0;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --border-color: #d1dfd6;
+  --text-primary: #12281e;
+  --text-secondary: #3b503a;
+  --text-muted: #60805f;
+  --accent-primary: #2d7658;
+  --accent-hover: #245e47;
+  --accent-light: #dcf0e6;
+  --card-shadow: 0 4px 20px -2px rgba(24, 62, 48, 0.08);
+}
+
+.dark {
+  --bg-primary: #07130e;
+  --bg-secondary: #0d1e16;
+  --bg-card: rgba(13, 30, 22, 0.82);
+  --border-color: #1a3829;
+  --text-primary: #edf7f1;
+  --text-secondary: #b0cdbd;
+  --text-muted: #729683;
+  --accent-primary: #3d946f;
+  --accent-hover: #5eb08b;
+  --accent-light: #163628;
+  --card-shadow: 0 4px 24px -2px rgba(0, 0, 0, 0.45);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', system-ui, sans-serif;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background-color: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+}
+
+/* Touch targets */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Custom Forest Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(61, 148, 111, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(61, 148, 111, 0.45);
+}
+
+/* Strikethrough task transition */
+.task-strike {
+  position: relative;
+  transition: opacity 0.2s ease;
+}
+.task-strike.is-done {
+  opacity: 0.6;
+  text-decoration: line-through;
+  text-decoration-color: #3d946f;
+  text-decoration-thickness: 2px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
